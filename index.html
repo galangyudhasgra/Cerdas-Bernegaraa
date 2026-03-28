@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Pancasila 🇮🇩</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= MENU / NAMA ================= -->
+<div id="namaPage" class="container">
+    <h1>🇮🇩 Quiz Pancasila</h1>
+    <p>Uji Pengetahuanmu tentang Penerapan Pancasila dalam kehidupan bernegara</p>
+
+   <div class="logo">🇮🇩</div>
+    <input type="text" id="nama" placeholder="Masukkan Nama Kamu">
+
+    <button onclick="bukaTujuan()">📖 Materi</button>
+    <button onclick="mulaiQuiz()">🎮 Mulai Quiz</button>
+</div>
+
+<!-- ================= POPUP MATERI ================= -->
+<div id="popupTujuan" class="container hidden">
+    <h2>Materi: Penerapan Pancasila</h2>
+    <p>
+        Pancasila sebagai dasar negara dijalankan dalam kehidupan sehari-hari melalui tindakan nyata. 
+        Contohnya: menghormati teman berbeda agama, menolong sesama tanpa membeda-bedakan, 
+        menjaga keutuhan NKRI, musyawarah untuk keputusan bersama, pemerataan pembangunan, dan menghargai HAM.
+    </p>
+    <button onclick="tutupTujuan()">✖ Tutup</button>
+</div>
+
+<!-- ================= QUIZ ================= -->
+<div id="quizPage" class="container hidden">
+    <h2 id="soal">Soal muncul di sini</h2>
+
+    <div id="timer">⏳ 15 detik</div>
+
+    <div id="pilihan"></div>
+
+    <p id="score">⭐ Score : 0</p>
+</div>
+
+<!-- ================= URAIAN ================= -->
+<div id="uraianPage" class="container hidden">
+    <h2 id="soalUraian"></h2>
+
+    <input type="text" id="jawaban" placeholder="Ketik jawaban kamu di sini...">
+
+    <button onclick="cekUraian()">✍️ Kirim Jawaban</button>
+</div>
+
+<!-- ================= MENANG ================= -->
+<div id="gameWin" class="container hidden"></div>
+
+<!-- ================= KALAH ================= -->
+<div id="gameOver" class="container hidden">
+    <h1>🇮🇩 Tetap Semangat!</h1>
+    <p>Belajar lagi nilai-nilai Pancasila ya!</p>
+    <button onclick="ulangGame()">🔄 Coba Lagi</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

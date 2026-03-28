@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #8B0000, #B22222, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* CARD */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease;
+}
+
+/* JUDUL */
+h1, h2 {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255,215,0,0.7);
+}
+
+/* LOGO EMOJI */
+.logo {
+    font-size: 60px;
+    margin: 15px 0;
+    display: inline-block;
+    text-shadow: 0 0 10px gold;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #ff0000, #ffffff);
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* HOVER BUTTON */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,0,0,0.7);
+}
+
+/* TIMER */
+#timer {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* SCORE */
+#score {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* HIDDEN */
+.hidden {
+    display: none;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
